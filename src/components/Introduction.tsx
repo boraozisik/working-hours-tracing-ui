@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Stack, Typography, Avatar } from "@mui/material";
 import avatar from "../bgimg.jpg";
+import { Counter } from "../workingDay/Counter";
 
 const Introduction = () => {
   return (
@@ -34,12 +35,35 @@ const Introduction = () => {
             {" "}
             <Typography
               variant="h2"
-              sx={{ marginTop: 4, color: "whitesmoke", fontWeight: 600 }}
+              sx={{
+                marginTop: 4,
+                color: "whitesmoke",
+                fontWeight: 700,
+                fontFamily: "Montserrat",
+              }}
             >
               workmind
             </Typography>
-            <Typography variant="h4" sx={{ marginTop: 4, color: "whitesmoke" }}>
+            <Typography
+              variant="h4"
+              sx={{
+                marginTop: 4,
+                color: "whitesmoke",
+                fontFamily: "Montserrat",
+                fontWeight: 400,
+              }}
+            >
               Working Hours Tracing System...
+            </Typography>
+            <Typography
+              variant="h2"
+              sx={{
+                marginTop: 10,
+                color: "whitesmoke",
+                fontWeight: 700,
+              }}
+            >
+              <Counter from={0} to={20543} />
             </Typography>
           </Stack>
         </Grid>
