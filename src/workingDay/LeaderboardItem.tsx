@@ -79,7 +79,7 @@ const LeaderboardItem = ({ workingDay }: Props) => {
               textTransform: "lowercase",
             }}
           >
-            {workingDay.day} days
+            {workingDay.day * 8} hours
           </Button>
           <Typography sx={{ fontSize: "small" }}>
             {formatDate(workingDay.exitedAt)}
