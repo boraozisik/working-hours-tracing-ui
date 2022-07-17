@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Introduction from "./components/Introduction";
 import { useQuery, useSubscription } from "urql";
 import OrderWorkers from "./workingDay/OrderWorkers";
+import WorkingDaySelector from "./workingDay/WorkingDaySelector";
 
 const TotalWorkingHoursQuery = `
   query Query {
@@ -45,6 +46,7 @@ function App() {
     >
       <Navbar />
       <Introduction data={data} res={res} />
+      <WorkingDaySelector />
       <OrderWorkers />
     </Stack>
   );
