@@ -1,7 +1,8 @@
 import React from "react";
 import { WorkingDay } from "../types";
 import { Box, Typography, Grid, Avatar, Stack, Button } from "@mui/material";
-import itemavatar from "../itemavatar.jpg";
+
+import avatar from "../worker-avatar.png";
 import formatDate from "../utils/formatDate";
 
 interface Props {
@@ -22,7 +23,10 @@ const LeaderboardItem = ({ workingDay }: Props) => {
         width: "100%",
       }}
     >
-      <Avatar sx={{ height: 65, width: 65 }} src={itemavatar} />
+      <Avatar
+        sx={{ height: 85, width: 85, backgroundColor: "gray" }}
+        src={avatar}
+      />
       <Box
         sx={{
           display: "flex",
