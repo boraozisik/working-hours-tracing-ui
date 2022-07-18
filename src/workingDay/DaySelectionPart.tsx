@@ -14,7 +14,7 @@ type Props = {
   initialDay: number;
 };
 
-const options = [1, 2, 3, 4];
+const options = [2, 3, 4, 6];
 
 const DaySelectionPart = ({ next, initialDay }: Props) => {
   const [days, setDays] = useState(initialDay);
@@ -34,7 +34,7 @@ const DaySelectionPart = ({ next, initialDay }: Props) => {
   const group = getRootProps();
 
   const nextPage = () => {
-    next({ count: days });
+    next({ day: days });
   };
 
   return (
@@ -61,7 +61,7 @@ const DaySelectionPart = ({ next, initialDay }: Props) => {
           fontWeight: "bold",
         }}
       >
-        Enter your working informations
+        Enter your weekly working informations
       </Typography>
       <hr />
       <SimpleGrid mt={5} columns={2} spacing={2} {...group}>
