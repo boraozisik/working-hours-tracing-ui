@@ -1,3 +1,27 @@
+# Workmind
+## Working Hours Tracing UI
+
+
+**Workmind is a working hours tracing system.**
+
+## Features
+
+- Displaying total hours worked weekly.
+- Creating a leaderboard for most working employees.
+- Filter by most working and last worked employees.
+- View detailed information on cards.
+
+## Used In Application
+
+- Language: [React.js](https://reactjs.org/)
+- For API: [Nest JS](https://nestjs.com/) [Graphql](https://graphql.org/) [Apollo](https://www.apollographql.com/) and Urql
+- API: Working Hours Tracing API (you can find in my repositories)
+- UI Library: [Material UI](https://mui.com/) [Chakra UI](https://chakra-ui.com/)
+- Code Formatting: [Prettier](https://prettier.io/)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
